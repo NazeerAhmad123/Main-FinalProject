@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEAL PAGE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+  #icon:hover{
+    animation-name: animation;
+    animation-duration: 0.3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 5;
+  }
+  @keyframes animation {
+    from{
+
+    }
+    to{
+      color: #ffc60b;
+      transform: rotate(360deg);
+    }
+  }
+
+  #icondiv{
+    width: 50px;
+    height: 50px;
+    border-radius:700px;
+    font-size: larger;
+  }
+  
+</style>
+</head>
+<body class="bg-white pb-5 container mx-auto">
+    <!-- smallest discount div... -->
+    <div class="w-full container  mx-auto"><div class="bg-[#2c2c2b] text-white flex justify-center container mx-auto w-full h-6 text-sm">Hey visitor, We've got a 15% discount for you! Now thats Awesome!</div>
+    <!-- NAVBAR... -->
+      <div class="h-24 bg-white text-black flex container mx-auto justify-between border-b-2  border-red-500 font-[ 'Roboto', sans-serif] items-center text-sm">
+          <div  class="text-3xl ml-20">  <img class="w-32 h-auto" src="./main logo.png" alt=""></div>
+        <div class="text-base flex gap-6 font-medium items-center justify-center hidden md:flex">
+          <a href="./FinalProject.html" class="  mt-[-10px] border-b-4 border-transparent hover:border-yellow-300 hover:border-b-4 mr-[5px] hover:text-black  h-8 flex-colomn items-center">HOME</a>
+         <a href="" class="  border-b-4 border-transparent hover:border-yellow-300 hover:border-b-4 hover:text-black hover:text-black mt-[-10px]  h-8 flex-colomn items-center ">DEALS</a>
+          <a href="" id="main" class="mt-[-10px] hover:text-black  h-9 flex-colomn items-center">ORDER ONLINE  <br><i class="fa-solid fa-angle-down font-bold "></i></a>
+          <a href="" class=" border-b-4  border-transparent hover:border-yellow-300 hover:border-b-4 mt-[-10px] hover:text-black  h-9 flex-colomn items-center">FRANCHISING</a>
+          <a href="" class=" border-b-4  border-transparent hover:border-yellow-300 hover:border-b-4 mt-[-10px] hover:text-black  h-9 flex-colomn items-center">CONTACT US</a>
+          <div class="w-10 h-10 flex justify-center rounded-md items-center bg-red-500"><i class="fa-solid fa-mobile-screen-button bg-red text-lg text-white  w-16 h-auto flex items-center justify-center"></i></div>
+          <a href="" class="hover:text-black mt-[-8px] h-12 w-24 flex-col justify-center items-center ">Call & <br> Order</a>
+         <div class="bg-yellow-400 w-10 h-10 flex justify-center items-center rounded-md mr-10"> <i class="fa-solid fa-cart-shopping"></i></div>
+      </div>
+     <button  class="md:hidden" id="btn" ><i class="fa-solid fa-bars text-2xl "></i></button>
+         </div>
+           <!-- SLIDE DOWN DIV... -->
+      <div id="down-slide" class="h-44 w-52 bg-white border-gray-100 border-[1px] absolute hidden rounded-md mt-[-5px] ml-[300px] px-4 text-black">
+        Create Your Own Pizza  <br>
+        Sidelines <br>
+        Drinks <br>
+        Sweet Somethings <br>
+        Deals <br>
+        Extra Dips <br>
+    </div>
+         <!-- <div > -->
+          <div class="container text-white bg-black mx-auto hidden " id="menu">
+              <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">MENU</a>
+              <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">DEALS</a>
+              <a href="" id="main2" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">Order Online <i class="fa-solid fa-angle-down font-bold "></i></a>
+                           <!-- SLIDE DOWN DIV... -->
+      <div id="down-slide2" class="h-44 w-full bg-white px-5 hidden text-black">
+        Create Your Own Pizza  <br>
+        Sidelines <br>
+        Drinks <br>
+        Sweet Somethings <br>
+        Deals <br>
+        Extra Dips <br>
+        </div>
+        <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">FRANCHISING</a>
+              <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">Call & Order</a>
+          </div>
+        <!-- NAMES DIV... -->
+          <div class="lg:w-[700px] h-20 border-b-2 sm:w-[100px] md:text-sm border-gray-200 ml-32">
+            <div class="flex justify-center gap-8  mt-4 lg:text-lg md:text-sm font-medium">
+            <p class="text-gray-500 hover:text-black"> Create Your Own Pizza </p>
+             <p class="text-gray-500 hover:text-black">Sidelines </p> 
+             <p class="text-gray-500 hover:text-black">Drinks</p>
+              <p class="text-gray-500 hover:text-black"> Sweet Somethings</p>
+                <p class="text-black">DEALS</p> <br>
+       </div>
+       <div class="flex justify-center  text-lg font-medium mt-2">  <p class="text-gray-500   hover:text-black flex-col border:text-black">Extra Dips</p>
+    </div>
+</div>
+
+<!-- WORLD CUP.. -->
+<div class=" lg:w-[350px] h-[84px] sm:w-[50px] md:mx-auto mt-8 ml-80">
+    <img src="./worldcup.jpg" alt="">
+  
+</div>
+
+<!-- 1 CARD... -->
+<section class="text-black body-font ">
+<div class="container px-2 py-24 mx-auto mt-[-50px]">
+  <div class="flex flex-wrap -m-4">
+    <div class="p-4 md:w-1/3">
+      <div class="h-full  border-opacity-60  overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-64 px-4  object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="p-6">
+          <h2 class=" text-lg font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 font-medium bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-32 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- DEAL... -->
+<div class=" ml-80 h-auto lg:w-[350px] mt-[-100px] sm:w-[50px] md:w-[100px]">
+<img src="./24-deal-page.png" alt="">
+</div>
+
+
+<!-- CARDS... -->
+<!-- <section class="text-black body-font ">
+<div class="container px-16 py-24 mx-auto mt-[-50px]">
+<div class="flex flex-wrap  gap-[10px] -m-4">
+   CARDMAIN1... -->
+  <!-- <div class=" md:w-52">
+    <div class="h-full overflow-hidden w-48   ">
+      <img class="lg:h-52 md:h-36 w-52  object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+      <div class="">
+        <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+        <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+         <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+          
+         <p class="font-bold text-md"> Rs. 2699</p>
+          
+         </p>
+        <div class="flex items-center flex-wrap  ">
+          <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+          </a>
+        
+        </div>
+      </div>
+    </div>
+  </div> -->
+     <!-- CARD 2... -->
+<!-- 
+     <div class=" md:w-60">
+      <div class="h-full  w-48  overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-52 object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="">
+          <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- CARD3... -->
+    <!-- <div class="md:w-60">
+      <div class="h-full w-48 overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-48 flex justify-center ml-10  object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="">
+          <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- CARD 4... -->
+     <!-- <div class="md:w-60 xl:grid-cols-4 ">
+      <div class="h-full  border-opacity-60 w-48  overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-52  object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="">
+          <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div>  -->
+     <!-- CARD5... -->
+<!-- 
+     <div class="md:w-60 mt-10">
+      <div class="h-full w-52   overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-48  object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="">
+          <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div> -->
+     <!-- CARD6... -->
+<!-- 
+     <div class="md:w-60 mt-10">
+      <div class="h-full w-52   overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-48 object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="">
+          <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div> -->
+     <!-- CARD7... -->
+     <!-- <div class="md:w-60 mt-10">
+      <div class="h-full w-52   overflow-hidden">
+        <img class="lg:h-52 md:h-36 w-48  object-cover object-center" src="./2023-10-04-Desktop-Worldcup-Grid (1).jpg" alt="blog">
+        <div class="">
+          <h2 class=" text-md title-font font-medium text-black mb-1"><i class="fa-solid fa-star"></i> WORLD CUP Deal</h2>
+          <p class="leading-relaxed text-sm font-medium mb-3">Serving <span class="text-red-500"> 4-5</span> hungry tummies!
+
+           <p class="font-medium text-sm" > 15" Original Pizza + Chicken Strips + 1.5 Ltr Drink</p>
+            
+           <p class="font-bold text-md"> Rs. 2699</p>
+            
+           </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+</section> -->
+<!-- <div class=" mt-8 ml-80">
+<img src="./Tuesday-Twist.png " alt="">
+</div> -->
+<!-- CARDS... -->
+<section class="text-black body-font mt-[-35px]">
+<div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-wrap -m-4">
+     <!-- CARD 1... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Deal-1-Slice-Combo.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class="text-lg  font-medium title-font mb-1"><i class="fa-solid fa-star"></i> Slice Combo</h3>
+        <h2 class=" title-font  text-xs font-medium">Serving <span class="text-red-500"> 1</span> hungry tummies!
+
+          20" Slice Pizza + Sideline (Half) + 1x Regular Drink
+        </h2>
+        <p class="mt-1 font-medium"> Rs. 899</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+   
+     <!-- CARD 2... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Deal-2-Blazing-Time.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i> Blazing Time</h3>
+        <h2 class=" title-font  text-xs font-medium">
+          Serving <span class="text-red-500">2</span> hungry tummies!
+          
+          9" Pan Pizza + Cheesy Bread (Half) + 2 x Regular Drink
+        </h2>
+        <p class="mt-1 font-medium"> Rs. 1499</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+    
+     <!-- CARD 3... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52 overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Deal-3-Super-Saver.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>Super Saver</h3>
+        <h2 class=" title-font  text-xs font-medium">
+          Serving <span class="text-red-500">4-5</span> hungry tummies!
+          
+          15" Original Pizza + Chicken Wings (Full) + 1.5 ltr Drink
+          </h2>
+        <p class="mt-1 font-medium">Rs. 2899</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      </div>
+    </div>
+   
+     <!-- CARD 4... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Deal-4-Big-Hunt.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>Big Hunt</h3>
+        <h2 class=" title-font text-xs font-medium">
+          Serving <span class="text-red-500">6-8</span> hungry tummies!
+          
+          20" Original Full Pizza + 2 Sidelines (Full) + Mini Cakes ( 6 PCS) + 2.25 ltr Drink
+
+          </h2>
+        <p class="mt-1 font-medium">Rs. 4999</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+    
+   <!-- SUNDAY DEAL... -->
+    <div class=" ml-80 h-auto lg:w-[350px] mt-[-70px] sm:w-[50px] md:w-[100px]" >
+      <img src="./super-sunday-desktop-badge.png" alt="">
+    </div>
+  <!-- REMAINING CARDS...  -->
+     <!-- CARDS... -->
+<section class="text-black mt-[-50px] body-font">
+<div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-wrap -m-4">
+     <!-- CARD 5... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./2023-06-12-Super-Sunday-Desktop-Grid-1.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class="text-lg  font-medium title-font mb-1"><i class="fa-solid fa-star"></i> Super Sunday 1</h3>
+        <h2 class=" title-font  text-xs font-medium">
+      Serving <span class="text-red-500">7</span> hungry tummies!
+
+    Buy Two Pans 12 Incher Pizza + Two & Three 1 Ltr Drink
+  </h2>
+
+        <p class="mt-1 font-medium ">Rs. 2999</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+   
+     <!-- CARD 6... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./2023-06-12-Super-Sunday-Desktop-Grid-2.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>  Super Sunday 2</h3>
+        <h2 class=" title-font  text-xs font-medium">
+        
+          Serving <span class="text-red-500">7</span> hungry tummies!
+          
+          Buy One Pan 12 Incher Pizza + One Xtreme 12 Incher Pizza + Two 1 Ltr Drink
+          
+        </h2>
+        <p class="mt-1 font-medium">Rs. 3099</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+    
+     <!-- CARD 7... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52 overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./2023-06-12-Super-Sunday-Desktop-Grid-3.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>   Super Sunday 3</h3>
+        <h2 class=" title-font  text-xs font-medium">
+      
+Serving <span class="text-red-500">10</span> hungry tummies!
+
+Buy Two Original 15 Incher Pizza + Two 1.5 Ltr Drink
+
+          </h2>
+        <p class="mt-1 font-medium">Rs. 4199</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Daylicious-Deal... -->
+<div class="ml-80 h-auto lg:w-[350px] mt-[-70px] sm:w-[50px] md:w-[100px]">
+<img src="./Daylicious-Deal-Desktop-Badge.png" alt="">
+</div>
+
+<!-- 3 OTHER CARDS... -->
+     <!-- CARDS... -->
+<section class="text-black mt-[-50px] body-font">
+<div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-wrap -m-4">
+     <!-- CARD 8... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./OTHER1.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class="text-lg  font-medium title-font mb-1"><i class="fa-solid fa-star"></i>Slice for One </h3>
+        <h2 class=" title-font  text-xs font-medium">
+      Serving <span class="text-red-500">1</span>
+       hungry tummies!
+      
+      20" Slice + Regular Drink
+      
+  </h2>
+
+        <p class="mt-1 font-medium "> Rs. 699</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+   
+     <!-- CARD 9... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./OTHER2.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>Ultimate Xtreme</h3>
+        <h2 class=" title-font  text-xs font-medium">
+        
+          Serving <span class="text-red-500">2-3 </span> 
+           hungry tummies!
+          
+          9" Xtreme Pizza + 2 regular Drink
+        </h2>
+          
+        <p class="mt-1 font-medium">Rs. 1399</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+    
+     <!-- CARD 10 ... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52 overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./OTHER3.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>Time For 10</h3>
+        <h2 class=" title-font  text-xs font-medium">
+      
+Serving <span class="text-red-500">2</span>
+hungry tummies!
+
+10" Original Pizza + 1 ltr Drink
+
+          </h2>
+        <p class="mt-1 font-medium">Rs. 1499</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+    
+   <!--TUESDAY TWIST... -->
+   <div class=" ml-80 h-auto lg:w-[350px] mt-[-70px] sm:w-[50px] md:w-[100px]" >
+    <img src="./Tuesday-Twist.png" alt="">
+  </div>
+<!-- ONLY 1 CARD... -->
+<section class="text-black body-font ">
+<div class="container px-5 py-24 mx-auto mt-[-50px]">
+  <div class="flex flex-wrap -m-4">
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52 overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./ONLY1.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i> Tuesday Twist</h3>
+        <h2 class=" title-font  text-xs font-medium">
+      
+   Serving <span class="text-red-500">5</span>
+   hungry tummies!
+   1 Original 15 Incher Pizza + 1.5 Ltr Drink
+
+          </h2>
+        <p class="mt-1 font-medium"> Rs. 2199</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- EARLY MIDNIGHT DEAL-->
+<div class="ml-80 h-auto lg:w-[350px] mt-[-70px] sm:w-[50px] md:w-[100px]">
+<img src="./Early-Midnight-Desktop-Badge.png" alt="">
+</div>
+
+<!--AGAIN 4 CARDS... -->
+<section class="text-black body-font mt-[-55px]">
+<div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-wrap -m-4">
+     <!-- CARD 11... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./41.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class="text-lg  font-medium title-font mb-1"><i class="fa-solid fa-star"></i> Go Solo</h3>
+        <h2 class=" title-font  text-xs font-medium">Serving <span class="text-red-500"> 1</span> hungry tummies!
+          20 incher Slice + Regular Drink
+          
+        </h2>
+        <p class="mt-1 font-medium"> Rs. 699</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+   
+     <!-- CARD 12... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./42.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>  Nine Tonight</h3>
+        <h2 class=" title-font  text-xs font-medium">
+          Serving <span class="text-red-500">2</span> hungry tummies!
+      9" Pan Pizza + 2 x Regular Drink
+        </h2>
+        <p class="mt-1 font-medium"> Rs. 1299</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+    
+     <!-- CARD 13... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52 overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./43.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>  Twin Sharing</h3>
+        <h2 class=" title-font  text-xs font-medium">
+          Serving <span class="text-red-500">4-5</span> hungry tummies!
+10" Original Pizza + 1 ltr Drink
+
+          </h2>
+        <p class="mt-1 font-medium">Rs. 1499</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      </div>
+    </div>
+   
+     <!-- CARD 14... -->
+    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <a class="block relative h-52  overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./44.jpg">
+      </a>
+      <div class="mt-4">
+        <h3 class=" text-lg font-medium title-font mb-1"><i class="fa-solid fa-star"></i>  Super Sized Munchies</h3>
+        <h2 class=" title-font text-xs font-medium">
+          Serving <span class="text-red-500">4-5</span> hungry tummies!
+          15" Original Pizza + 1.5 ltr Drink
+          </h2>
+        <p class="mt-1 font-medium">  Rs. 2399</p>
+      </div>
+      <div class="flex items-center flex-wrap ">
+        <a class="text-gray-900 bg-yellow-500 inline-flex h-8 flex justify-center items-center  mt-2 w-28 px-4 rounded-md md:mb-2 lg:mb-0"> Order Now
+        </a>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<!-- FOOTER... -->
+<footer class="text-white bg-[#2C2C2B] mt-[-40px] body-font ">
+<div class="container px-5  py-8 mx-auto flex md:items-center text-white lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+  <div class="w-42 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center">
+    <img  class="w-32 h-auto" src="./footerlogo.png" alt="">
+      <span class="ml-3 text-xl"></span>
+    </a>
+  </div>
+  <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 md:text-left text-center">
+    <div class="lg:w-1/4 md:w-1/2 w-full font-bold ">
+      <h2 class="title-font  tracking-widest ml-[-30px] font-bold text-lg mb-3">Secure Payments With:</h2>
+      <nav class="list-none mb-10">
+        <li class="ml-[-50px]">
+          <a class=" hover:text-gray-800 "><img class="h-auto w-52" src="./footer-logos-2.png" alt=""></a>
+        </li>
+      </nav>
+    </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4 font-bold ">
+      <h2 class="title-font font-bold tracking-widest text-lg mb-3">Information</h2>
+      <nav class="list-none mb-10">
+        <li>
+          <a class="">About Us</a>
+        </li>
+        <li>
+          <a class="">Speak Your Mind</a>
+        </li>
+        <li>
+          <a class="">Careers</a>
+        </li>
+        <li>
+          <a class="">Contact Us</a>
+        </li>
+      </nav>
+    </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full font-bold px-4 ml-[-30px]">
+      <h2 class="title-font  text-lg tracking-widest mb-3">Contact Us</h2>
+      <nav class="list-none mb-10">
+        <li>
+          <a class=" ">111-36-36-36</a>
+        </li>
+        <li>
+          <a class="">info@14thstreetpizza.com</a>
+        </li>
+      </nav>
+    </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full font-bold  px-4 ml-5">
+      <h2 class="title-font flex tracking-widest text-lg mb-3">Follow Us</h2>
+      <nav class="list-none mb-10">
+        <li>
+          <a id="icondiv" class=" rounded-full  ">
+            <i id="icon" class="fa-brands fa-facebook text-2xl"></i>
+            <i id="icon" class="fa-brands fa-square-twitter text-2xl "></i>
+            <i id="icon" class="fa-brands fa-pinterest text-2xl"></i>
+            <i id="icon" class="fa-brands fa-linkedin text-2xl"></i>
+            <i id="icon" class="fa-brands fa-square-instagram text-2xl rounded-full "></i>
+          </a>
+        </li>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- LAST DIV... -->
+<div class="bg-[#ffc60b] w-full h-8 container mx-auto text-center px-5 flex flex-wrap flex-col sm:flex-row">
+  <p class="text-black text-sm flex justify-center items-center ml-80  sm:text-left">Copyright © 2023 |14th Street Pizza Co.</p>
+</div>
+<!-- <div class="bg-[#ffc60b]">
+  <div class="container mx-auto text-center px-5 flex flex-wrap flex-col sm:flex-row">
+    <p class="text-black text-sm flex justify-center items-center ml-80  sm:text-left">Copyright © 2023 |14th Street Pizza Co.
+    </p> -->
+    <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"> -->
+      <!-- <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a> -->
+    </span>
+  
+</div>
+</footer>
+
+
+        <script>
+            $(document).ready(function(){
+                $('#btn').click(function(){
+                $('#menu').slideToggle();
+                abc();
+                })
+                function abc(){
+                    var a= '<i class="fa-solid fa-xmark text-2xl "></i>';
+                    var b='<i class="fa-solid fa-bars text-2xl "></i>';  
+              
+                if($('#btn').html()===a)
+                {
+                 $('#btn').html(b);
+    
+                }
+                else{
+                    $('#btn').html(a);
+                }
+            }
+            });
+            $(document).ready(function(){
+                $('#main').mouseover(function(){
+                $('#down-slide').show();
+            });
+        });
+         $(document).ready(function(){
+                $('#main').mouseout(function(){
+                 $('#down-slide').hide();
+            });
+         });
+
+        $(document).ready(function(){
+                $('#main2').mouseover(function(){
+                $('#down-slide2').show();
+            });
+        });
+        $(document).ready(function(){
+                $('#main2').mouseout(function(){
+                $('#down-slide2').hide();
+            });
+        });
+</script>
+</div>
+</body>
+</html>

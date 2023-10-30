@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14th STREET PIZZA CLONE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+  #icon:hover{
+    animation-name: animation;
+    animation-duration: 0.3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 5;
+  }
+  @keyframes animation {
+    from{
+
+    }
+    to{
+      color: #ffc60b;
+      transform: rotate(360deg);
+    }
+  }
+
+  #icondiv{
+    width: 50px;
+    height: 50px;
+    border-radius:700px;
+    font-size: larger;
+  }
+
+</style>
+</head>
+<body class="bg-white pb-5 container mx-auto">
+    <!-- smallest discount div... -->
+    <div class="bg-[#2c2c2b] text-white flex justify-center container mx-auto w-full h-6 text-sm">Hey visitor, We've got a 15% discount for you! Now thats Awesome!</div>
+        <!-- NAVBAR... -->
+          <div class="h-24 bg-white text-black flex container mx-auto justify-between border-b-2  border-red-500 font-[ 'Roboto', sans-serif] items-center text-sm">
+              <div  class="text-3xl ml-20">  <img class="w-32 h-auto" src="./main logo.png" alt=""></div>
+            <div class="text-base flex gap-6 font-medium items-center justify-center hidden md:flex">
+              <a href="./menu.html" class="  mt-[-10px] border-b-4 border-transparent hover:border-yellow-300 hover:border-b-4 mr-[5px] hover:text-black  h-8 flex-colomn items-center">MENU</a>
+              <div class="  border-b-4 border-transparent hover:border-yellow-300 hover:border-b-4 hover:text-black hover:text-black mt-[-10px]  h-8 flex-colomn items-center ">DEALS</div>
+              <a href="" id="main" class="mt-[-10px] hover:text-black  h-9 flex-colomn items-center">ORDER ONLINE  <br><i class="fa-solid fa-angle-down font-bold "></i></a>
+              <a href="" class=" border-b-4  border-transparent hover:border-yellow-300 hover:border-b-4 mt-[-10px] hover:text-black  h-9 flex-colomn items-center">FRANCHISING</a>
+              <a href="" class=" border-b-4  border-transparent hover:border-yellow-300 hover:border-b-4 mt-[-10px] hover:text-black  h-9 flex-colomn items-center">CONTACT US</a>
+              <div class="w-10 h-10 flex justify-center rounded-md items-center bg-red-500"><i class="fa-solid fa-mobile-screen-button bg-red text-lg text-white  w-16 h-auto flex items-center justify-center"></i></div>
+              <a href="" class="hover:text-black mt-[-8px] h-12 w-24 flex-col justify-center items-center ">Call & <br> Order</a>
+             <div class="bg-yellow-400 w-10 h-10 flex justify-center items-center rounded-md mr-10"> <i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+         <button  class="md:hidden" id="btn" ><i class="fa-solid fa-bars text-2xl "></i></button>
+             </div>
+               <!-- SLIDE DOWN DIV... -->
+          <div id="down-slide" class="h-44 w-52 bg-white border-gray-100 border-[1px] absolute hidden rounded-md mt-[-5px] ml-[300px] px-4 text-black">
+            Create Your Own Pizza  <br>
+            Sidelines <br>
+            Drinks <br>
+            Sweet Somethings <br>
+            Deals <br>
+            Extra Dips <br>
+        </div>
+             <!-- <div > -->
+              <div class="container text-white bg-black mx-auto hidden " id="menu">
+                  <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">MENU</a>
+                  <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">DEALS</a>
+                  <a href="" id="main2" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">Order Online <i class="fa-solid fa-angle-down font-bold "></i></a>
+                               <!-- SLIDE DOWN DIV... -->
+          <div id="down-slide2" class="h-44 w-full bg-white px-5 hidden text-black">
+            Create Your Own Pizza  <br>
+            Sidelines <br>
+            Drinks <br>
+            Sweet Somethings <br>
+            Deals <br>
+            Extra Dips <br>
+        </div>
+                  <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">FRANCHISING</a>
+                  <a href="" class="block hover:bg-white 200 hover:text-black 400 pl-5 py-5">Call & Order</a>
+              </div>
+              <!-- CONTACT BANNER... -->
+             <div class=" w-full h-60">
+              <img src="./contact-banner.jpg" alt="">
+             </div>
+             <!-- FORM... -->
+       <div class="  flex h-auto ">
+       <div class=" ml-16">
+         <div class="h-10 w-80 ml-28 mt-6 border-[1px] flex px-3 text-gray-500 items-center border-gray-700 ">
+        Full Name
+    </div>
+    <div class="h-10 w-80 ml-28 mt-4 border-[1px] flex px-3 text-gray-500 items-center border-gray-700 ">
+      E-Mail
+  </div>
+  <div class="h-10 w-80 ml-28 mt-4 border-[1px] flex px-3 text-gray-500 items-center border-gray-700 ">
+    Contact No.
+</div>
+<div class="h-10 w-80 ml-28 mt-4 border-[1px] flex px-3 text-gray-500 items-center border-gray-700 ">
+  City
+</div>
+<div class="h-44 w-80 ml-28 mt-4 border-[1px]  px-3 text-gray-500  border-gray-700 ">
+Message
+</div></div>
+
+<!-- ADDRESS... -->
+<div class=" flex-col text-gray-900 text-lg font-medium ml-16 mt-48 ">
+<div>GET IN TOUCH </div>
+<div><i class="fa-solid fa-mobile-screen-button text-2xl "></i> 021-111-36-36-36</div>
+<div class="mr-4"> <h class="text-3xl font-bold   ">@</h> info@14thstreetpizza.com</div>
+<div><i class="fa-brands fa-square-facebook text-2xl "></i>  www.facebook.com/14thstreetpizza</div>
+<div> <i class="fa-brands fa-square-twitter text-2xl "></i> www.twitter.com/14thstreetpizza</div></div>
+       </div>
+<!-- BUTTON... -->
+<div class="flex items-center flex-wrap ">
+  <a class=" bg-yellow-500 inline-flex border-gray-700 border-[1px] font-medium mt-4 text-black h-10 ml-64 flex justify-center items-center  mt-2 w-40 px-4 rounded-md md:mb-2 lg:mb-0">Send Message
+  </a>
+</div>
+
+
+                <!-- FOOTER... -->
+                <footer class="text-white bg-[#2C2C2B] body-font mt-10">
+                  <div class="container px-5  py-8 mx-auto flex md:items-center text-white lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                    <div class="w-42 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                      <a class="flex title-font font-medium items-center md:justify-start justify-center">
+                      <img  class="w-32 h-auto" src="./footerlogo.png" alt="">
+                        <span class="ml-3 text-xl"></span>
+                      </a>
+                    </div>
+                    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 md:text-left text-center">
+                      <div class="lg:w-1/4 md:w-1/2 w-full font-bold ">
+                        <h2 class="title-font  tracking-widest ml-[-30px] font-bold text-lg mb-3">Secure Payments With:</h2>
+                        <nav class="list-none mb-10">
+                          <li class="ml-[-50px]">
+                            <a class=" hover:text-gray-800 "><img class="h-auto w-52" src="./footer-logos-2.png" alt=""></a>
+                          </li>
+                        </nav>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 w-full px-4 font-bold ">
+                        <h2 class="title-font font-bold tracking-widest text-lg mb-3">Information</h2>
+                        <nav class="list-none mb-10">
+                          <li>
+                            <a class="">About Us</a>
+                          </li>
+                          <li>
+                            <a class="">Speak Your Mind</a>
+                          </li>
+                          <li>
+                            <a class="">Careers</a>
+                          </li>
+                          <li>
+                            <a class="">Contact Us</a>
+                          </li>
+                        </nav>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 w-full font-bold px-4 ml-[-30px]">
+                        <h2 class="title-font  text-lg tracking-widest mb-3">Contact Us</h2>
+                        <nav class="list-none mb-10">
+                          <li>
+                            <a class=" ">111-36-36-36</a>
+                          </li>
+                          <li>
+                            <a class="">info@14thstreetpizza.com</a>
+                          </li>
+                        </nav>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 w-full font-bold  px-4 ml-5">
+                        <h2 class="title-font flex tracking-widest text-lg mb-3">Follow Us</h2>
+                        <nav class="list-none mb-10">
+                          <li>
+                          <div  class="w-[25px] h-[25px] rounded-full">
+                            <a class=" rounded-full text-2xl flex gap-2 ">
+                             <div id="icondiv"> <i id="icon" class="fa-brands fa-facebook"></i></div>
+                              <div id="icondiv"><i id="icon" class="fa-brands fa-square-twitter"></i></div>
+                             <div id="icondiv"> <i id="icon" class="fa-brands fa-pinterest  "></i></div>
+                             <div id="icondiv"> <i id="icon" class="fa-brands fa-linkedin  "></i></div>
+                             <div id="icondiv"  class="w-[25px] h-[25px] rounded-full"> <i id="icon" class="fa-brands fa-square-instagram"></i></div>
+                            </a>
+                          </div>
+                          </li>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- LAST DIV... -->
+                  <div class="bg-[#ffc60b] w-full h-8 container mx-auto text-center px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-black text-sm flex justify-center items-center ml-80  sm:text-left">Copyright © 2023 |14th Street Pizza Co.</p>
+                  </div>
+                      </span>
+                    </div>
+                  </div>
+                </footer>
+
+
+             <script>
+                $(document).ready(function(){
+                    $('#btn').click(function(){
+                    $('#menu').slideToggle();
+                    abc();
+                    })
+                    function abc(){
+                        var a= '<i class="fa-solid fa-xmark text-2xl "></i>';
+                        var b='<i class="fa-solid fa-bars text-2xl "></i>';
+
+                    if($('#btn').html()===a)
+                    {
+                     $('#btn').html(b);
+
+                    }
+                    else{
+                        $('#btn').html(a);
+                    }
+                }
+                });
+                $(document).ready(function(){
+                    $('#main').mouseover(function(){
+                    $('#down-slide').show();
+                });
+            });
+             $(document).ready(function(){
+                    $('#main').mouseout(function(){
+                     $('#down-slide').hide();
+                });
+             });
+
+            $(document).ready(function(){
+                    $('#main2').mouseover(function(){
+                    $('#down-slide2').show();
+                });
+            });
+            $(document).ready(function(){
+                    $('#main2').mouseout(function(){
+                    $('#down-slide2').hide();
+                });
+            });
+  </script>
+
+</body>
+  </html>
